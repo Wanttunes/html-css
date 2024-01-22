@@ -9,29 +9,25 @@
         padding: 0px;
     }
 
-
-    body {
-     background: black url(imagens/espaco.jpg) center center fixed no-repeat;
-     background-size: cover;
+    section{
+      padding: 23.4vh;
     }
+    .espaco{
+      background: black url(imagens/espaco.jpg) center center fixed no-repeat;
+      background-size: cover;
 
-    .imagem-sobreposta {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-       /* ou qualquer outra largura desejada */
-      height: auto;
-      
+    }
+    section > img{
+      background-color: black;
+      background-position: center left;
+      background-size: cover;
+      background-attachment: fixed;
     }
   </style>
 </head>
 <body>
-
-  <div>
-    <img class="imagem-sobreposta" src="imagens/astronauta.png" alt="Imagem Sobreposta">
-    
-  </div>
-
+    <section class="espaco">
+      <img src="imagens/astronauta.png" alt="">
+    </section>
 </body>
 </html>
